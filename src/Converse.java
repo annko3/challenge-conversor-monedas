@@ -49,11 +49,11 @@ public class Converse {
 
 
     public static Map<String, Double> obtenerTasasDeCambio() throws IOException {
-        String url_str = "https://v6.exchangerate-api.com/v6/c0beabdb1de65c465c87a735/latest/USD";
+        String url_str = "https://v6.exchangerate-api.com/v6/your.api/latest/USD";
         Map<String, Double> tasasDeCambio = new HashMap<>();
         try {
             // Making Request
-            URL url = new URL("https://v6.exchangerate-api.com/v6/c0beabdb1de65c465c87a735/latest/USD");
+            URL url = new URL("https://v6.exchangerate-api.com/v6/your.api/latest/USD");
             HttpURLConnection request = (HttpURLConnection) url.openConnection();
             request.connect();
 
